@@ -7,7 +7,7 @@ import { addProduct } from "../feature/cart/cartSilce";
 import { ToastContainer, toast } from "react-toastify";
 
 function ProductDetails() {
-  const [product, setProduct] = useState(null);
+  const [product, setProduct] = useState({});
   const dispatch = useDispatch();
   const { data, loading, error, refetch } = useFetch({
     method: "GET",
